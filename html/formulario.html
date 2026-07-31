@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu formulário</title>
+
+</head>
+<body>
+    
+    <form id="meuFormulario" action="https://webhook.site/42ef304a-5082-4dae-a23c-48e910b3d3cd" method="POST">
+
+      <label for="email">E-mail:</label>
+       <input type="email"
+         id="email"
+         name="email"
+         placeholder="Digite seu e-mail"
+         required>
+       <button type="submit">Enviar</button>
+
+      <label for="nome">nome:</label>
+       <input type="text"
+         id="nome" 
+         name="nome"
+         placeholder="Digite seu nome"
+         required>
+       <button type="submit">Enviar</button>
+
+    <label for="senha">senha:</label>
+
+      <input type="password" 
+        id="senha"
+        name="senha" 
+        placeholder="Digite sua senha" 
+        minlength="8"
+        pattern="(?.*[a-z]) (?.*[A-Z]) (?.*\d) (?.*[@$!%*?&] (?=.*[a-zA-Z\d@$!%*?&]).{8,})"
+        required>
+      <button type="submit">Enviar</button>
+
+    <label for="idade">idade:</label>
+
+      <input type="number" 
+        id="idade" 
+        name="idade" 
+        placeholder="Digite sua idade" 
+        min="0" 
+        max="120" 
+        step="1"
+        value="14"
+        required
+        placeholder="Digite sua idade"
+      >
+      <button type="submit">Enviar</button>
+
+    </form>
+
+</body>
+</html>
