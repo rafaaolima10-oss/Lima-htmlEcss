@@ -1,0 +1,113 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pet Shop</title>
+        <link rel="stylesheet" href="petshopstyle.css">
+        <style>
+        :root{
+            --primary-color: #19591e;
+            --secondary-color: #1bb127;
+            --background-color: #f4f4f9;
+            --text-color: #333;
+        }
+        [data-theme="dark"]{
+            --primary-color: #48a74d;
+            --secondary-color: #a3ff61;
+            --background-color: #222;
+            --text-color: #bababc;
+        }
+        body{
+            background-color: var(--background-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        a{
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover{
+            color: var(--secondary-color);
+        }
+        .btn{
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover{
+            background-color: var(--secondary-color);
+        }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <h1 class="logo">Pet Shop</h1>
+                <nav class="navbar">
+                    <ul class="nav-links">
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#about">Sobre nós</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                    <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+                </nav>
+                <button id="theme-toggle" class="btn">Alternar tema</button>
+            </div>
+        </header>
+        <main class="main-content container">
+            <aside class="sidebar" id="about">
+                <h2>Sobre o Petshop</h2>
+                <p>A Pet Shop oferece serviços de alta qualidade para cuidar do seu melhor amigo</p>
+                <img src="https://tse4.mm.bing.net/th/id/OIP.mvacIDVTaafWK4u9IOs6lAHaEM?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Cachorro sendo tratado por veterinários.">
+                <ul class="sidebar-link">
+                    <li><a href="#">Clínica Veterinária</a></li>
+                    <li><a href="#">Banho e Tosa</a></li>
+                    <li><a href="#">Pet Hotel</a></li>
+                    <li><a href="#">Produtos para Pets</a></li>
+                </ul>
+            </aside>
+            <section class="cards" id="services">
+                <h2>Nossos Serviços</h2>
+                <div class="card">
+                    <img src="https://www.petplusclinica.com/wp-content/uploads/2022/09/IMG_2260.jpg" alt="Clínica Veterinária">
+                    <h3>Clínica Veterinária</h3>
+                    <p>Cuidado completo para a saúde do seu Pet</p>
+                    <button class="btn">Saiba Mais</button>
+                </div>
+                <div class="card">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.DHj2K1vHAYPo9616X4gfUAHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Banho e Tosa">
+                    <h3>Banho e Tosa</h3>
+                    <p>Deixe seu pet ainda mais bonito e cheiroso!</p>
+                    <button class="btn">Saiba Mais</button>
+                </div>
+                <div class="card">
+                    <img src="https://i.pinimg.com/originals/05/94/a2/0594a298cd424a018b73180763390072.jpg" alt="Pet Hotel">
+                    <h3>Pet Hotel</h3>
+                    <p>Conforto e segurança enquanto você está fora</p>
+                    <button class="btn">Saiba Mais</button>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" id="contact">    
+            <div class="container">
+                <p>&copy;Pet Shop. Todos os direitos reservados</p>
+                <p><strong>Endereço:</strong> Rua dos animais, 123, Bairro Pet - Cidade dos Bichos </p>
+                <p><strong>Telefone:</strong> (99) 99999-9999</p>
+                <p><strong>Horário de atendimento</strong> Segunda a Sexta: 8h - 18h | Sábados 9h - 14h</p>
+            </div>
+        </footer>
+        <script>
+            const themeToggle = document.getElementById("theme-toggle");
+            themeToggle.addEventListener("click", () =>{
+                document.body.dataset.theme = document.body.dataset.theme === "dark" ? ""  : "dark";
+            })
+        </script>
+    </body>
+    </html>

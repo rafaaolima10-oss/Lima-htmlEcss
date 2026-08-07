@@ -1,0 +1,29 @@
+body{
+    background-color: #000;
+    height: 100vh;
+    overflow: hidden; /* informa o navegador o que fazer quando o conteúdo ultrapassar
+    a altura da tela */
+}
+ 
+.estrelinha{
+    color: yellow;
+    text-shadow: 0 0 6px #ffeb3b, 0 0 10px #ff9800;
+    position: fixed;
+    pointer-events: none;
+    font-size: 12px;
+    content: "&#10022;";
+    color: #fff;
+    animation: caiEDesvanece 8s ease-out forwards;
+}
+ 
+@keyframes caiEDesvanece{
+    0%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(var(--xAleatorio), 40px) scale(0.3) rotate(45deg);
+        opacity: 0;
+    }
+}
+ 
