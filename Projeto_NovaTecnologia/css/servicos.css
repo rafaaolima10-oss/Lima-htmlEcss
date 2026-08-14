@@ -1,0 +1,17 @@
+.servicos-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.servicos{
+    width: 300px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.servicos:hover{
+    transform: translateY(-5px);
+}
