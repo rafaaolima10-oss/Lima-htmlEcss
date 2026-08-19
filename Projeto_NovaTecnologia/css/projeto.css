@@ -46,6 +46,14 @@ header nav ul a{
 .logo{
     display: flex;
 }
+.logo{
+    width: 20%;
+    border-radius: 100%;
+}
+.logo img{
+    width: 20%;
+    border-radius: 100%;
+}
 .nome{
     width: 70%;
     margin-left: 2px;
@@ -79,7 +87,7 @@ header nav ul a{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .carousel-item img{
-    max-width: 100px;
+    max-width: 30%;
     height: auto;
     margin-right: 1px;
     border-radius: 8px;
@@ -220,7 +228,6 @@ footer{
         display: block;
  
     }
-}
  
 .menu{
     display: none;
@@ -235,4 +242,4 @@ footer{
 .menu li{
     padding: 10px;
 }
- 
+}
