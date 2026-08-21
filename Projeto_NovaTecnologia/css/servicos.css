@@ -1,5 +1,6 @@
 .servicos-container{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
@@ -7,11 +8,19 @@
     width: 300px;
     background: #f9f9f9;
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 15px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.servicos:hover{
-    transform: translateY(-5px);
+.servicos img{
+    width: 100%;
+    border-radius: 5px;
+}
+.servicos h3 {
+    margin: 10px 0;
+    color: #333;
+}
+.servicos p {
+    font-size: 14px;
+    color: #666
 }
